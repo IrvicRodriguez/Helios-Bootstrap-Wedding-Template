@@ -3,6 +3,10 @@ $(document).ready(function() {
   contactScript('forcontact');
 }
 });
+//reset html
+function reseter() {
+  document.getElementById("registrationform").reset();
+};
 //firebase
 function contactScript(value) {
   var config = {
@@ -24,7 +28,5 @@ function contactScript(value) {
       f = { name: c, lastname: cc,invitees: d};
     console.log(f);
     return firebase.database().ref().push(f);
+    reseter();
 })};
-function myFunction() {
-  document.getElementById("registrationform").reset();
-}
