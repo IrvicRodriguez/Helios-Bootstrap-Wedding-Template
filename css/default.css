@@ -5,6 +5,10 @@
  * Version: 1.1
  */
 
+ .centermessage {
+    text-align: center;
+ }
+
 body{
   background:#f5f5f5;
   color: #374650;
